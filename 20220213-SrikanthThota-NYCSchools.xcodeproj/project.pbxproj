@@ -16,6 +16,11 @@
 		103A6BB527BA29EC00D90993 /* _0220213_SrikanthThota_NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103A6BB427BA29EC00D90993 /* _0220213_SrikanthThota_NYCSchoolsTests.swift */; };
 		103A6BBF27BA29EC00D90993 /* _0220213_SrikanthThota_NYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103A6BBE27BA29EC00D90993 /* _0220213_SrikanthThota_NYCSchoolsUITests.swift */; };
 		103A6BC127BA29EC00D90993 /* _0220213_SrikanthThota_NYCSchoolsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103A6BC027BA29EC00D90993 /* _0220213_SrikanthThota_NYCSchoolsUITestsLaunchTests.swift */; };
+		103A6BD027BA2B0000D90993 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103A6BCF27BA2B0000D90993 /* Model.swift */; };
+		103A6BD227BA2B1500D90993 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103A6BD127BA2B1500D90993 /* Network.swift */; };
+		103A6BD427BA2B5500D90993 /* SchoolCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103A6BD327BA2B5500D90993 /* SchoolCellView.swift */; };
+		103A6BD627BA2B8700D90993 /* SchoolDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103A6BD527BA2B8700D90993 /* SchoolDetailsViewController.swift */; };
+		103A6BD827BAC26100D90993 /* FontBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103A6BD727BAC26100D90993 /* FontBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		103A6BBA27BA29EC00D90993 /* 20220213-SrikanthThota-NYCSchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20220213-SrikanthThota-NYCSchoolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		103A6BBE27BA29EC00D90993 /* _0220213_SrikanthThota_NYCSchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0220213_SrikanthThota_NYCSchoolsUITests.swift; sourceTree = "<group>"; };
 		103A6BC027BA29EC00D90993 /* _0220213_SrikanthThota_NYCSchoolsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0220213_SrikanthThota_NYCSchoolsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		103A6BCF27BA2B0000D90993 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		103A6BD127BA2B1500D90993 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		103A6BD327BA2B5500D90993 /* SchoolCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolCellView.swift; sourceTree = "<group>"; };
+		103A6BD527BA2B8700D90993 /* SchoolDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewController.swift; sourceTree = "<group>"; };
+		103A6BD727BAC26100D90993 /* FontBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,11 @@
 				103A6B9F27BA29E800D90993 /* SceneDelegate.swift */,
 				103A6BA127BA29E800D90993 /* ViewController.swift */,
 				103A6BA327BA29E800D90993 /* Main.storyboard */,
+				103A6BCF27BA2B0000D90993 /* Model.swift */,
+				103A6BD127BA2B1500D90993 /* Network.swift */,
+				103A6BD327BA2B5500D90993 /* SchoolCellView.swift */,
+				103A6BD527BA2B8700D90993 /* SchoolDetailsViewController.swift */,
+				103A6BD727BAC26100D90993 /* FontBook.swift */,
 				103A6BA627BA29EC00D90993 /* Assets.xcassets */,
 				103A6BA827BA29EC00D90993 /* LaunchScreen.storyboard */,
 				103A6BAB27BA29EC00D90993 /* Info.plist */,
@@ -259,7 +274,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				103A6BA227BA29E800D90993 /* ViewController.swift in Sources */,
+				103A6BD027BA2B0000D90993 /* Model.swift in Sources */,
+				103A6BD227BA2B1500D90993 /* Network.swift in Sources */,
+				103A6BD827BAC26100D90993 /* FontBook.swift in Sources */,
+				103A6BD627BA2B8700D90993 /* SchoolDetailsViewController.swift in Sources */,
 				103A6B9E27BA29E800D90993 /* AppDelegate.swift in Sources */,
+				103A6BD427BA2B5500D90993 /* SchoolCellView.swift in Sources */,
 				103A6BA027BA29E800D90993 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +455,7 @@
 		103A6BC527BA29EC00D90993 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,7 +464,6 @@
 				INFOPLIST_FILE = "20220213-SrikanthThota-NYCSchools/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,6 +482,7 @@
 		103A6BC627BA29EC00D90993 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,7 +491,6 @@
 				INFOPLIST_FILE = "20220213-SrikanthThota-NYCSchools/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
